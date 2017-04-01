@@ -110,10 +110,11 @@ export default class QNWebUploader extends EventEmitter{
   //## 创建文件
   // * http://developer.qiniu.com/docs/v6/api/reference/up/mkfile.html
   _mkFile(ctxList, size) {
+    let url;
     if(this._uptoken.key){
-      let url = this._qiniuUrl + 'mkfile/' + size + '/key/' + this._uptoken.key;
+      url = this._qiniuUrl + 'mkfile/' + size + '/key/' + this._uptoken.key;
     } else {
-      let url = this._qiniuUrl + 'mkfile/' + size;
+      url = this._qiniuUrl + 'mkfile/' + size;
     }
 
 
