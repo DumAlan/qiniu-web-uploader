@@ -5,3 +5,4 @@ lib
 __tests__/tmp
 
 *.log
+.idea
